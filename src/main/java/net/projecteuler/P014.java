@@ -5,7 +5,7 @@ import java.util.*;
 public class P014 {
 
     public static final int START_RANGE_INCLUSIVE = 1;
-    public static final int END_RANGE_EXCLUSIVE = 100000000;
+    public static final int END_RANGE_EXCLUSIVE = 10000;
     public static final int FINAL_NUMBER = 1;
 
     public static HashMap<Long, Integer> numbersAndChainLength = new HashMap<>();
