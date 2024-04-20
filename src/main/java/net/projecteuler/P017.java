@@ -4,13 +4,13 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 public class P017 {
-//    public static void main(String[] args) {
-//        int letters = 0;
-//        for (int i = 1; i <= 1000; i++) {
-//            letters += numberToLetters(i);
-//        }
-//        System.out.println(letters);
-//    }
+    public static void main(String[] args) {
+        int letters = 0;
+        for (int i = 1; i <= 1000; i++) {
+            letters += numberToLetters(i);
+        }
+        System.out.println(letters);
+    }
 
     public static ArrayList<String> numberToPhrase(int value) {
         HashMap<Integer, String> words = new HashMap<>();
