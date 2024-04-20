@@ -4,11 +4,11 @@ public class P009 {
     public static final int SUM = 1000;
 
     public static boolean isCorrectSum(int a, int b, int c) {
-        return (a + b + c) == SUM ? true : false;
+        return (a + b + c) == SUM;
     }
 
     public static boolean isPythagoreanTriplet(int a, int b, int c) {
-        return (a * a + b * b) == (c * c) ? true : false;
+        return (a * a + b * b) == (c * c);
     }
 
     public static void main(String[] args) {

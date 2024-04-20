@@ -9,7 +9,7 @@ public class P007 {
         long largerFactor;
         for (long smallerFactor = 1; smallerFactor * smallerFactor <= n; smallerFactor++) {
             largerFactor = n / smallerFactor;
-            if ((n % smallerFactor == 0) && (smallerFactor != 1) && (smallerFactor != n)) {
+            if ((n % largerFactor == 0) && (smallerFactor != 1) && (smallerFactor != n)) {
                 return false;
             }
         }
