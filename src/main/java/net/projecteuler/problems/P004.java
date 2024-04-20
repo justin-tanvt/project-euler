@@ -1,4 +1,4 @@
-package net.projecteuler;
+package net.projecteuler.problems;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -11,10 +11,7 @@ public class P004 {
         int stringMidpoint = (numberInString.length() + 1) / 2;
         String firstHalf = numberInString.substring(stringMidpoint);
         String secondHalfReversed = reversedNumberInString.substring(stringMidpoint);
-        if (firstHalf.equals(secondHalfReversed)) {
-            return true;
-        }
-        return false;
+        return firstHalf.equals(secondHalfReversed);
     }
 
     public static void main(String[] args) {
@@ -28,7 +25,7 @@ public class P004 {
                 }
             }
         }
-        Collections.sort(palindromicMultiples, Collections.reverseOrder());
+        palindromicMultiples.sort(Collections.reverseOrder());
         System.out.println(palindromicMultiples.get(0));
     }
 

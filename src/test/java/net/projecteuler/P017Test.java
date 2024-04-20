@@ -1,5 +1,6 @@
 package net.projecteuler;
 
+import net.projecteuler.problems.P017;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
