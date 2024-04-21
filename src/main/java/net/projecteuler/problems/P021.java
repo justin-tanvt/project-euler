@@ -8,6 +8,10 @@ public class P021 {
     private static final Map<Long, Long> FUNCTION_OUTPUT_CACHE = new HashMap<>();
 
     public static void main(String[] args) {
+        System.out.printf("final solution = %s\n", solve());
+    }
+
+    private static String solve() {
         // sanity checks
         assert calculateSumOfProperDivisors(220) == 284;
         assert calculateSumOfProperDivisors(284) == 220;
@@ -22,6 +26,7 @@ public class P021 {
 
             long currentSum = findSumOfProperDivisors(number);
             long nextSum = findSumOfProperDivisors(currentSum);
+
             if (number == nextSum && number != currentSum) {
                 System.out.printf("amicable pair %s <--> %s\n", number, currentSum);
                 amicableNumbersFound.add(number);
@@ -31,7 +36,7 @@ public class P021 {
             }
         }
 
-        System.out.printf("final solution = %s\n", solution);
+        return "" + solution;
     }
 
     public static List<Long> findAllIntegerFactorsInOrder(long number) {

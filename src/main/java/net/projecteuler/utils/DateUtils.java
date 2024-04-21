@@ -1,6 +1,7 @@
 package net.projecteuler.utils;
 
-public class P019Date {
+public class DateUtils {
+
     DAY day;
     MONTH month;
     int year;
@@ -69,7 +70,7 @@ public class P019Date {
         }
     }
 
-    public P019Date(DAY day, MONTH month, int year) {
+    public DateUtils(DAY day, MONTH month, int year) {
         this.day = day;
         this.month = month;
         this.year = year;
