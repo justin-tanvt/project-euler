@@ -11,16 +11,20 @@ public class P016 {
         for (int i = 0; i < exponent; i++) {
             power = power.multiply(base);
         }
-
         System.out.println(power);
 
-        String[] digits = power.toString().split("");
+        long solution = getSumOfDigits(power.toString());
+        System.out.println(solution);
+    }
 
+    public static long getSumOfDigits(String number) {
         int sum = 0;
+
+        String[] digits = number.split("");
         for (String digit : digits) {
             sum += Integer.parseInt(digit);
         }
 
-        System.out.println(sum);
+        return sum;
     }
 }

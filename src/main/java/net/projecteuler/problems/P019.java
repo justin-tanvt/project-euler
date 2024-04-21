@@ -1,4 +1,4 @@
-package net.projecteuler;
+package net.projecteuler.problems;
 
 import net.projecteuler.utils.P019Date;
 import net.projecteuler.utils.P019Date.*;
