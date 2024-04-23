@@ -59,7 +59,7 @@ public class P021 {
         return allIntegerFactorsInOrder;
     }
 
-    private static long calculateSumOfProperDivisors(long number) {
+    public static long calculateSumOfProperDivisors(long number) {
         List<Long> properDivisors = findProperDivisors(number);
         return properDivisors.stream().mapToLong(Long::longValue).sum();
     }
