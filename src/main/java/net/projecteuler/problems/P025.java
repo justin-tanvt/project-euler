@@ -1,4 +1,4 @@
-package net.projecteuler;
+package net.projecteuler.problems;
 
 import java.math.BigInteger;
 
