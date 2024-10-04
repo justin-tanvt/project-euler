@@ -56,8 +56,8 @@ public class P030 {
 
     private static int maxDigitsForValidSolution() {
         // for a given number of digits, there is a range of values for the LHS and RHS of the expression
-        // for 2 digits, the LHS has range [10, 99] while the RHS is [1*2, 9^EXPONENT*2]
-        // for 3 digits, the LHS' range is [100, 999] while the RHS is [1*3, 9^EXPONENT*2], and so on...
+        // for 2 digits, the LHS has range [10, 99] while the RHS is [1, 9^EXPONENT*2]
+        // for 3 digits, the LHS' range is [100, 999] while the RHS is [1, 9^EXPONENT*3], and so on...
 
         // a solution can only be found when both ranges intersect (i.e. the LHS COULD equal to the RHS)
         // as digits are increased, it is observed that LHS' range increases faster than RHS' range
